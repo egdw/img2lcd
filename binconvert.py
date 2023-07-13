@@ -24,6 +24,6 @@ def convertImg2bin(img_path,img_name):
 
 dirs = os.listdir("./")
 for dir in dirs:
-    if os.path.isfile(dir) and (".jpg" in str.lower(dir) or ".png" in str.lower(dir) or ".bmp" in str.lower(dir) or ".png" in str.lower(dir)):
+    if os.path.isfile(dir) and (".bin" not in str.lower(dir)) and (".jpg" in str.lower(dir) or ".png" in str.lower(dir) or ".bmp" in str.lower(dir) or ".png" in str.lower(dir) or ".jpeg" in str.lower(dir)):
         print(dir)
         convertImg2bin("./",dir)
